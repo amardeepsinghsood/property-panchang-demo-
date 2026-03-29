@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experion SAATORI — Luxury Apartments Sector 151 Noida | Property Panchang</title>
+  <meta name="description" content="Experion SAATORI luxury residences in Sector 151, Noida. Architecturally stunning homes inspired by Japanese aesthetics by Experion Developers." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project-shared.css" />
+  <style>
+    .project-hero-overlay { background: linear-gradient(to top, rgba(10,8,20,0.93) 0%, rgba(10,8,20,0.5) 50%, rgba(10,8,20,0.1) 100%); }
+    .proj-badge-cat { background: linear-gradient(135deg, #7c3aed, #a78bfa); color: #0f0020; }
+    .amenity-icon svg { color: #7c3aed !important; }
+    .amenity-card:hover .amenity-icon { background: #7c3aed; }
+    .amenity-card:hover .amenity-icon svg { color: white !important; }
+    .amenity-card:hover { border-color: #7c3aed; box-shadow: 0 16px 40px rgba(124,58,237,0.12); }
+    .highlight-card:hover::before { background: #7c3aed; }
+    /* Zen pulse animation */
+    .zen-circles {
+      position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+      z-index: 3; opacity: 0; animation: zenFade 1.5s 1s ease forwards;
+    }
+    @keyframes zenFade { to { opacity: 1; } }
+    .zen-circle {
+      position: absolute; border-radius: 50%;
+      border: 1px solid rgba(167,139,250,0.3);
+      animation: zenPulse 3s ease-in-out infinite;
+    }
+    .zen-circle:nth-child(1) { width: 60px; height: 60px; top: -30px; left: -30px; }
+    .zen-circle:nth-child(2) { width: 90px; height: 90px; top: -45px; left: -45px; animation-delay: 0.5s; }
+    .zen-circle:nth-child(3) { width: 120px; height: 120px; top: -60px; left: -60px; animation-delay: 1s; }
+    @keyframes zenPulse { 0%,100% { opacity: 0.3; transform: scale(1); } 50% { opacity: 0.6; transform: scale(1.05); } }
+  </style>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<nav class="navbar at-top" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⌂</span><span>Property <span class="logo-accent">Panchang</span></span></a>
+    <ul class="nav-links"><li><a href="index.html#home" class="nav-link">Home</a></li><li><a href="index.html#projects" class="nav-link active">Projects</a></li><li><a href="index.html#residential" class="nav-link">Residential</a></li><li><a href="index.html#commercial" class="nav-link">Commercial</a></li><li><a href="index.html#contact" class="nav-link">Contact</a></li></ul>
+    <div class="nav-actions"><a href="index.html#contact" class="btn-nav-cta ripple-btn">Book Your Visit</a><button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><div class="mobile-menu-inner"><a href="index.html#home" class="mobile-link">Home</a><a href="index.html#projects" class="mobile-link">Projects</a><a href="index.html#residential" class="mobile-link">Residential</a><a href="index.html#contact" class="mobile-link">Contact</a><a href="index.html#contact" class="btn-mobile-cta">Book Visit</a></div></div>
+
+<section class="project-hero">
+  <div class="project-hero-bg"><img src="assets/experion-saatori.jpg" alt="Experion SAATORI Noida" loading="eager" /></div>
+  <div class="project-hero-overlay"></div>
+  <div class="zen-circles">
+    <div class="zen-circle"></div>
+    <div class="zen-circle"></div>
+    <div class="zen-circle"></div>
+  </div>
+  <div class="project-hero-content">
+    <a href="index.html#projects" class="project-back-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> Back to Projects</a>
+    <div class="project-badges">
+      <span class="proj-badge proj-badge-type">Residential</span>
+      <span class="proj-badge proj-badge-cat">Luxury</span>
+      <span class="proj-badge proj-badge-status">● Now Booking</span>
+    </div>
+    <h1 class="project-hero-title">Experion<br><span style="color:#a78bfa">SAATORI</span></h1>
+    <p class="project-hero-subtitle">SAATORI — the art of living beautifully. Experion's masterwork in Sector 151 draws from Japanese architectural philosophy to create homes that inspire calm, clarity, and transcendent living.</p>
+    <div class="project-hero-meta">
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 151, Noida</div>
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Possession: 2026</div>
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg> 3 &amp; 4 BHK</div>
+    </div>
+    <div class="project-hero-cta-row">
+      <a href="index.html#contact" class="btn-primary ripple-btn">Enquire Now →</a>
+      <a href="#overview" class="btn-outline-white">Explore Details</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar"><div class="stats-bar-inner">
+  <div class="stat-bar-item" data-reveal data-delay="100"><div class="stat-bar-value"><span data-count="32">0</span></div><div class="stat-bar-label">Floors</div></div>
+  <div class="stat-bar-item" data-reveal data-delay="200"><div class="stat-bar-value"><span data-count="340">0</span></div><div class="stat-bar-label">Residences</div></div>
+  <div class="stat-bar-item" data-reveal data-delay="300"><div class="stat-bar-value"><span data-count="4">0</span><span>K+</span></div><div class="stat-bar-label">Sq.Ft Max Area</div></div>
+  <div class="stat-bar-item" data-reveal data-delay="400"><div class="stat-bar-value"><span data-count="60">0</span><span>+</span></div><div class="stat-bar-label">Curated Amenities</div></div>
+</div></div>
+
+<section class="overview-section" id="overview">
+  <div class="container">
+    <div class="overview-grid">
+      <div class="overview-text">
+        <span class="section-tag" data-reveal>OVERVIEW</span>
+        <h2 class="section-title" data-reveal data-delay="150">The Art of Living Beautifully</h2>
+        <p data-reveal data-delay="200">Experion SAATORI in Sector 151 is a masterwork of residential design inspired by Japanese principles of simplicity, harmony, and precision. SAATORI means "the moment of realization" — and every element of this project is designed to create that sublime moment for its residents.</p>
+        <p data-reveal data-delay="250">Large 3 and 4 BHK residences with Zen garden courtyards, floor-to-ceiling glazing, premium Japanese-inspired interiors, and carefully curated community amenities make SAATORI a truly one-of-a-kind living experience in NCR.</p>
+        <div class="feature-tags" data-reveal data-delay="300">
+          <span class="feature-tag">Zen Architecture</span>
+          <span class="feature-tag">Japanese Gardens</span>
+          <span class="feature-tag">Floor-to-Ceiling Glass</span>
+          <span class="feature-tag">Experion Quality</span>
+          <span class="feature-tag">Forest Edge</span>
+        </div>
+        <div class="overview-cta" data-reveal data-delay="350"><a href="index.html#contact" class="btn-outline-dark">Book Site Visit</a></div>
+      </div>
+      <div data-reveal="right" data-delay="200">
+        <div class="info-card">
+          <div class="info-card-header"><h3>✨ Project Specifications</h3></div>
+          <div class="info-card-body">
+            <div class="info-row"><span class="info-label">Developer</span><span class="info-value">Experion Developers</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-value">Sector 151, Noida</span></div>
+            <div class="info-row"><span class="info-label">Type</span><span class="info-value">Luxury Apartments</span></div>
+            <div class="info-row"><span class="info-label">Configuration</span><span class="info-value">3 &amp; 4 BHK</span></div>
+            <div class="info-row"><span class="info-label">Super Area</span><span class="info-value highlight">2,200 – 4,000 sq.ft</span></div>
+            <div class="info-row"><span class="info-label">Total Floors</span><span class="info-value">32 Floors</span></div>
+            <div class="info-row"><span class="info-label">Total Units</span><span class="info-value">340 Units</span></div>
+            <div class="info-row"><span class="info-label">RERA</span><span class="info-value highlight">RERA Approved ✓</span></div>
+            <div class="info-row"><span class="info-label">Possession</span><span class="info-value">Dec 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="highlights-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:16px"><span class="section-tag" data-reveal>HIGHLIGHTS</span><h2 class="section-title" data-reveal data-delay="150">What Makes SAATORI Extraordinary</h2></div>
+    <div class="highlights-grid">
+      <div class="highlight-card" data-reveal data-delay="100"><div class="highlight-number">01</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg></div><div class="highlight-title">Zen Design Philosophy</div><div class="highlight-text">Architecture rooted in Japanese ma (negative space), wabi-sabi, and harmony with nature — creating spaces that calm the mind and uplift the spirit.</div></div>
+      <div class="highlight-card" data-reveal data-delay="200"><div class="highlight-number">02</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3"/></svg></div><div class="highlight-title">Japanese Courtyard Gardens</div><div class="highlight-text">Curated Zen meditation gardens, cherry blossom-inspired landscape, and bamboo groves create space for reflection and tranquility.</div></div>
+      <div class="highlight-card" data-reveal data-delay="300"><div class="highlight-number">03</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/></svg></div><div class="highlight-title">Floor-to-Ceiling Glass</div><div class="highlight-text">Every residence features 9-foot floor-to-ceiling glazing — flooding your home with natural light and offering uninterrupted views of the forest and city.</div></div>
+      <div class="highlight-card" data-reveal data-delay="100"><div class="highlight-number">04</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="highlight-title">Experion Track Record</div><div class="highlight-text">Experion Developers — UK-origin developer with impeccable delivery record across Delhi NCR. The Art District and Atmos are celebrated landmarks.</div></div>
+      <div class="highlight-card" data-reveal data-delay="200"><div class="highlight-number">05</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div><div class="highlight-title">Premium Japanese Fittings</div><div class="highlight-text">Toto sanitaryware, Grohe fittings, Siemens appliances, and custom Japanese-inspired cabinetry throughout each residence.</div></div>
+      <div class="highlight-card" data-reveal data-delay="300"><div class="highlight-number">06</div><div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/></svg></div><div class="highlight-title">Forest Edge Location</div><div class="highlight-text">Sector 151's green edge location, adjacent to forest preserves and the Okhla Bird Sanctuary — a rare combination of nature and urban access.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="amenities-section">
+  <div class="container">
+    <div style="text-align:center"><span class="section-tag" data-reveal>AMENITIES</span><h2 class="section-title" data-reveal data-delay="150">60+ Curated Experiences</h2></div>
+    <div class="amenities-grid">
+      <div class="amenity-card" data-reveal data-delay="100"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3"/></svg></div><div class="amenity-name">Infinity Pool</div><div class="amenity-desc">Moonlit infinity pool on rooftop with forest view.</div></div>
+      <div class="amenity-card" data-reveal data-delay="150"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg></div><div class="amenity-name">Zen Garden</div><div class="amenity-desc">Japanese stone garden for meditation &amp; reflection.</div></div>
+      <div class="amenity-card" data-reveal data-delay="200"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="amenity-name">Wellness Spa</div><div class="amenity-desc">Onsen-inspired hot spring spa and treatment suites.</div></div>
+      <div class="amenity-card" data-reveal data-delay="250"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/></svg></div><div class="amenity-name">Sky Lounge</div><div class="amenity-desc">Residents-only sky lounge with Noida panorama.</div></div>
+      <div class="amenity-card" data-reveal data-delay="300"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/></svg></div><div class="amenity-name">Samurai Gym</div><div class="amenity-desc">Premium fitness centre with martial arts training area.</div></div>
+      <div class="amenity-card" data-reveal data-delay="350"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/></svg></div><div class="amenity-name">Tea Room</div><div class="amenity-desc">Authentic Japanese tea ceremony room for residents.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <span class="section-tag" data-reveal>GALLERY</span>
+    <h2 class="section-title" data-reveal data-delay="150">Experion SAATORI — Visual Journey</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-reveal data-delay="100"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Exterior" /><div class="gallery-item-overlay"><span class="gallery-item-label">Tower Exterior</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="200"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80" alt="Interior" /><div class="gallery-item-overlay"><span class="gallery-item-label">Zen Living Room</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="100"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&q=80" alt="Garden" /><div class="gallery-item-overlay"><span class="gallery-item-label">Zen Garden</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="200"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80" alt="Pool" /><div class="gallery-item-overlay"><span class="gallery-item-label">Infinity Pool</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="300"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=700&q=80" alt="Kitchen" /><div class="gallery-item-overlay"><span class="gallery-item-label">Japanese Kitchen</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="location-section">
+  <div class="container">
+    <div class="location-grid">
+      <div>
+        <span class="section-tag" data-reveal>LOCATION</span>
+        <h2 class="section-title" data-reveal data-delay="150">Sector 151 — Noida's Forest Edge</h2>
+        <p class="section-desc" data-reveal data-delay="250">Sector 151 sits at the green edge of Noida — peaceful, well-connected, and appreciating rapidly with expressway proximity.</p>
+        <div class="location-perks" data-reveal data-delay="300">
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg></div><div><div class="location-perk-title">Sector 148 Metro — 5 min</div><div class="location-perk-desc">Aqua Line metro access to entire NCR</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg></div><div><div class="location-perk-title">Okhla Forest — Adjacent</div><div class="location-perk-desc">Bird sanctuary and nature reserve nearby</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/></svg></div><div><div class="location-perk-title">Schools — 10 min</div><div class="location-perk-desc">Ryan International, Shiv Nadar School</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg></div><div><div class="location-perk-title">Expressway — 2 km</div><div class="location-perk-desc">Noida–Greater Noida Expressway access</div></div></div>
+        </div>
+      </div>
+      <div class="location-map" data-reveal="right" data-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507!2d77.38!3d28.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSector%20151%2C%20Noida!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy" title="Experion SAATORI Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div data-reveal><h2>Experience Your Moment<br><span style="color:var(--orange)">of Realization</span></h2><p>SAATORI invites you to discover a way of living that goes beyond luxury — a philosophy of calm, beauty, and intention. Book your private walkthrough today.</p></div>
+    <div class="cta-banner-buttons" data-reveal="right" data-delay="200"><a href="index.html#contact" class="btn-primary ripple-btn">Book Private Tour →</a><a href="tel:+919876543210" class="btn-outline-white">Call Us Now</a></div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <div style="text-align:center"><span class="section-tag" data-reveal>EXPLORE MORE</span><h2 class="section-title" data-reveal data-delay="150">More Luxury Residences</h2></div>
+    <div class="related-grid">
+      <a href="trump-tower.html" class="related-card" data-reveal data-delay="100"><div class="related-card-img"><img src="assets/trump-tower.jpg" alt="Trump Tower" /><div class="related-card-img-badge"><span class="related-badge">Ultra Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">Trump Tower</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 94, Noida</div><span class="related-card-link">View Project →</span></div></a>
+      <a href="lt-green-reserve.html" class="related-card" data-reveal data-delay="200"><div class="related-card-img"><img src="assets/lt-green-reserve.jpg" alt="L&T Green Reserve" /><div class="related-card-img-badge"><span class="related-badge">Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">L&amp;T Green Reserve</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 128, Noida</div><span class="related-card-link">View Project →</span></div></a>
+      <a href="nimbus-golden-palms.html" class="related-card" data-reveal data-delay="300"><div class="related-card-img"><img src="assets/nimbus-golden-palms.jpg" alt="Nimbus" /><div class="related-card-img-badge"><span class="related-badge">Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">Nimbus The Golden Palms</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 168, Noida</div><span class="related-card-link">View Project →</span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-logo">⌂ Property <span class="logo-accent">Panchang</span></div><p class="footer-tagline">Bridging real estate expertise with traditional wisdom.</p></div><div class="footer-links-col"><h4>Quick Links</h4><ul><li><a href="index.html#home">Home</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#residential">Residential</a></li><li><a href="index.html#contact">Contact</a></li></ul></div><div class="footer-links-col"><h4>Properties</h4><ul><li><a href="trump-tower.html">Trump Tower</a></li><li><a href="ace-starlit.html">ACE Starlit</a></li><li><a href="lt-green-reserve.html">L&amp;T Green Reserve</a></li><li><a href="experion-saatori.html">Experion SAATORI</a></li></ul></div><div class="footer-links-col"><h4>Contact</h4><ul class="footer-contact-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012.12 3.18 2 2 0 014.11 1H7a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+91 98765 43210</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@propertypanchang.com</li></ul></div></div><div class="footer-bottom"><p>© 2024 Property Panchang. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+<script src="project-shared.js"></script>
+</body>
+</html>

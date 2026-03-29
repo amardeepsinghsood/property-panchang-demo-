@@ -131,6 +131,11 @@ ul { list-style: none; }
   letter-spacing: -0.02em;
 }
 .navbar.scrolled .nav-logo { color: var(--charcoal); }
+.nav-logo-img {
+  height: 28px;
+  width: auto;
+  flex-shrink: 0;
+}
 .logo-icon { font-size: 1.4rem; line-height: 1; }
 .logo-accent { color: var(--orange); }
 

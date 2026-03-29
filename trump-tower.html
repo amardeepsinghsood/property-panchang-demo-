@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trump Tower Noida — Ultra Luxury Residences | Property Panchang</title>
+  <meta name="description" content="Discover Trump Tower Noida — ultra luxury apartments in Sector 94. World-class amenities, iconic brand, breathtaking skyline views. By Property Panchang." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project-shared.css" />
+  <style>
+    /* Trump Tower — unique gold accent animation */
+    :root { --proj-accent: #C9A84C; }
+    .project-hero { min-height: 700px; }
+    .hero-gold-line {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--proj-accent), transparent);
+      animation: goldShimmer 3s ease infinite;
+      z-index: 3;
+    }
+    @keyframes goldShimmer {
+      0%,100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    .proj-badge-cat { background: linear-gradient(135deg, #C9A84C, #f0d080); color: #1a0f00; }
+    .highlight-card:hover { border-color: rgba(201,168,76,0.4); }
+    .highlight-card:hover::before { background: var(--proj-accent); }
+    .amenity-card:hover { border-color: var(--proj-accent); box-shadow: 0 16px 40px rgba(201,168,76,0.12); }
+    .amenity-card:hover .amenity-icon { background: var(--proj-accent); }
+    .amenity-icon svg { color: var(--proj-accent) !important; }
+    .amenity-card:hover .amenity-icon svg { color: white !important; }
+    /* Floating badge */
+    .trump-award {
+      position: absolute; top: 40px; right: 40px; z-index: 4;
+      background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.4);
+      color: #f0d080; padding: 12px 18px; border-radius: 12px;
+      text-align: center; backdrop-filter: blur(8px);
+      animation: fadeUpIn 1s 1s var(--ease) both;
+    }
+    .trump-award-val { font-size: 1.3rem; font-weight: 900; color: #f0d080; display: block; }
+    .trump-award-label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+    @media (max-width: 640px) { .trump-award { display: none; } }
+  </style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar at-top" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⌂</span>
+      <span>Property <span class="logo-accent">Panchang</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#home" class="nav-link">Home</a></li>
+      <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+      <li><a href="index.html#residential" class="nav-link">Residential</a></li>
+      <li><a href="index.html#commercial" class="nav-link">Commercial</a></li>
+      <li><a href="index.html#prelaunch" class="nav-link">Pre-Launch</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#contact" class="btn-nav-cta ripple-btn">Book Your Visit</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+  <div class="mobile-menu-inner">
+    <a href="index.html#home" class="mobile-link">Home</a>
+    <a href="index.html#projects" class="mobile-link">Projects</a>
+    <a href="index.html#residential" class="mobile-link">Residential</a>
+    <a href="index.html#commercial" class="mobile-link">Commercial</a>
+    <a href="index.html#prelaunch" class="mobile-link">Pre-Launch</a>
+    <a href="index.html#contact" class="mobile-link">Contact</a>
+    <a href="index.html#contact" class="btn-mobile-cta">Book Muhurat Visit</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="project-hero">
+  <div class="project-hero-bg">
+    <img src="assets/trump-tower.jpg" alt="Trump Tower Noida — Ultra Luxury Apartments" loading="eager" />
+  </div>
+  <div class="project-hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+
+  <div class="trump-award">
+    <span class="trump-award-val">#1</span>
+    <span class="trump-award-label">Ultra Luxury<br>Noida 2024</span>
+  </div>
+
+  <div class="project-hero-content">
+    <a href="index.html#projects" class="project-back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to Projects
+    </a>
+    <div class="project-badges">
+      <span class="proj-badge proj-badge-type">Residential</span>
+      <span class="proj-badge proj-badge-cat">Ultra Luxury</span>
+      <span class="proj-badge proj-badge-status">● Now Selling</span>
+    </div>
+    <h1 class="project-hero-title">Trump Tower<br><span style="color:#C9A84C">Noida</span></h1>
+    <p class="project-hero-subtitle">An iconic address crafted to the exacting standards of the Trump Organization — where world-class luxury meets the skyline of Noida's most coveted sector.</p>
+    <div class="project-hero-meta">
+      <div class="project-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Sector 94, Noida
+      </div>
+      <div class="project-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Possession: 2026
+      </div>
+      <div class="project-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+        3, 4 & 5 BHK Residences
+      </div>
+    </div>
+    <div class="project-hero-cta-row">
+      <a href="index.html#contact" class="btn-primary ripple-btn">Enquire Now →</a>
+      <a href="#overview" class="btn-outline-white">Explore Details</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-bar-item" data-reveal data-delay="100">
+      <div class="stat-bar-value"><span data-count="56">0</span><span>+</span></div>
+      <div class="stat-bar-label">Floors</div>
+    </div>
+    <div class="stat-bar-item" data-reveal data-delay="200">
+      <div class="stat-bar-value"><span data-count="262">0</span></div>
+      <div class="stat-bar-label">Exclusive Units</div>
+    </div>
+    <div class="stat-bar-item" data-reveal data-delay="300">
+      <div class="stat-bar-value"><span data-count="6">0</span><span>K+</span></div>
+      <div class="stat-bar-label">Sq.Ft Super Area</div>
+    </div>
+    <div class="stat-bar-item" data-reveal data-delay="400">
+      <div class="stat-bar-value"><span data-count="7">0</span><span>★</span></div>
+      <div class="stat-bar-label">Amenity Categories</div>
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="overview-section" id="overview">
+  <div class="container">
+    <div class="overview-grid">
+      <div class="overview-text">
+        <span class="section-tag" data-reveal>PROJECT OVERVIEW</span>
+        <h2 class="section-title" data-reveal data-delay="150">Where Prestige Meets Perfection</h2>
+        <p data-reveal data-delay="200">Trump Tower Noida is a landmark ultra-luxury residential development in Sector 94, set along the Noida Expressway. Developed under the prestigious Trump brand in association with a leading Indian developer, it redefines what premium living means in the NCR region.</p>
+        <p data-reveal data-delay="250">The tower rises 56 floors above the Noida skyline, offering breathtaking views of the Yamuna floodplain and the metropolitan horizon. Each residence is meticulously crafted with imported Italian marble, premium German hardware, and bespoke interiors designed to evoke the signature Trump luxury aesthetic.</p>
+        <p data-reveal data-delay="300">From the triple-height lobby to the sky lounges and private terraces, every detail speaks of a life lived without compromise.</p>
+
+        <div class="feature-tags" data-reveal data-delay="350">
+          <span class="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Italian Marble Flooring</span>
+          <span class="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg>Yamuna Views</span>
+          <span class="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg>Smart Home System</span>
+          <span class="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>24/7 Concierge</span>
+          <span class="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>Private Theatre</span>
+        </div>
+        <div class="overview-cta" data-reveal data-delay="400">
+          <a href="index.html#contact" class="btn-outline-dark">Schedule a Private Tour</a>
+        </div>
+      </div>
+
+      <div data-reveal="right" data-delay="200">
+        <div class="info-card">
+          <div class="info-card-header">
+            <h3>🏛 Project Specifications</h3>
+          </div>
+          <div class="info-card-body">
+            <div class="info-row"><span class="info-label">Developer</span><span class="info-value">Trump Organization (Licensed)</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-value">Sector 94, Noida</span></div>
+            <div class="info-row"><span class="info-label">Property Type</span><span class="info-value">Ultra Luxury Apartments</span></div>
+            <div class="info-row"><span class="info-label">Configuration</span><span class="info-value">3, 4 &amp; 5 BHK</span></div>
+            <div class="info-row"><span class="info-label">Super Area</span><span class="info-value highlight">4,500 – 7,200 sq.ft</span></div>
+            <div class="info-row"><span class="info-label">Total Floors</span><span class="info-value">56 Floors</span></div>
+            <div class="info-row"><span class="info-label">Total Units</span><span class="info-value">262 Units</span></div>
+            <div class="info-row"><span class="info-label">RERA Status</span><span class="info-value highlight">RERA Approved ✓</span></div>
+            <div class="info-row"><span class="info-label">Possession</span><span class="info-value">December 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights-section">
+  <div class="container">
+    <div class="section-header" style="text-align:center;margin-bottom:16px">
+      <span class="section-tag" data-reveal>WHY TRUMP TOWER</span>
+      <h2 class="section-title" data-reveal data-delay="150">Unmatched Reasons to Call It Home</h2>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card" data-reveal data-delay="100">
+        <div class="highlight-number">01</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="highlight-title">Global Icon Brand</div>
+        <div class="highlight-text">Trump Tower is a globally recognized ultra-luxury brand — ensuring your investment holds international prestige and unmatched resale value in the Indian market.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="200">
+        <div class="highlight-number">02</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg></div>
+        <div class="highlight-title">Yamuna & City Views</div>
+        <div class="highlight-text">Floor-to-ceiling glass facades on upper floors offer uninterrupted views of the Yamuna River, Okhla Bird Santuary, and the Delhi–NCR skyline from your living room.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="300">
+        <div class="highlight-number">03</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="highlight-title">Expressway Frontage</div>
+        <div class="highlight-text">Strategically located on the Noida Expressway — 15 minutes to South Delhi, 10 minutes to DND, and seamless metro connectivity at your doorstep.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="100">
+        <div class="highlight-number">04</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <div class="highlight-title">Security Fortress</div>
+        <div class="highlight-text">Multi-tier security including facial recognition entry, 24/7 armed guards, CCTV surveillance across all zones, and dedicated security command center.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="200">
+        <div class="highlight-number">05</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <div class="highlight-title">Imported Finishes</div>
+        <div class="highlight-text">Italian marble, European modular kitchens, German CP fittings, and bespoke millwork — every surface is a testament to the finest global craftsmanship.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="300">
+        <div class="highlight-number">06</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="highlight-title">RERA Compliant</div>
+        <div class="highlight-text">Fully RERA registered and compliant — ensuring complete transparency on timelines, specifications, carpet areas, and buyer protection at every stage.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="amenities-section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-tag" data-reveal>WORLD-CLASS AMENITIES</span>
+      <h2 class="section-title" data-reveal data-delay="150">Life Elevated at Every Level</h2>
+      <p class="section-desc" style="margin:0 auto" data-reveal data-delay="250">From rooftop sky pools to private wine cellars — every amenity is designed to complement the Trump standard of living.</p>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-card" data-reveal data-delay="100">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+        <div class="amenity-name">Sky Infinity Pool</div>
+        <div class="amenity-desc">Temperature-controlled rooftop pool on the 50th floor with panoramic city views.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="150">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="amenity-name">Wellness Spa</div>
+        <div class="amenity-desc">Full-service luxury spa with steam, sauna, jacuzzi & certified therapists.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="200">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="amenity-name">Private Theatre</div>
+        <div class="amenity-desc">Dolby Atmos screening room with premium seating — bookable for private events.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="250">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <div class="amenity-name">Sky Lounge & Bar</div>
+        <div class="amenity-desc">Resident-only rooftop lounge with panoramic views and curated dining.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="300">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="amenity-name">24/7 Concierge</div>
+        <div class="amenity-desc">Personalized concierge services — from travel planning to restaurant reservations.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="350">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <div class="amenity-name">Smart Home</div>
+        <div class="amenity-desc">Fully automated residences with voice control, remote access and energy management.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="100">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="amenity-name">Business Centre</div>
+        <div class="amenity-desc">Fully equipped co-working lounges and private meeting rooms for residents.</div>
+      </div>
+      <div class="amenity-card" data-reveal data-delay="150">
+        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="amenity-name">Kids Play Zone</div>
+        <div class="amenity-desc">Dedicated children's play areas with safe equipment and supervised activity zones.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <span class="section-tag" data-reveal>GALLERY</span>
+    <h2 class="section-title" data-reveal data-delay="150">Explore Trump Tower Noida</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-reveal data-delay="100">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Trump Tower Exterior View" loading="lazy" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Tower Exterior</span></div>
+      </div>
+      <div class="gallery-item" data-reveal data-delay="200">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Luxury Living Room" loading="lazy" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Master Living Room</span></div>
+      </div>
+      <div class="gallery-item" data-reveal data-delay="100">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" alt="Premium Bedroom" loading="lazy" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Master Bedroom</span></div>
+      </div>
+      <div class="gallery-item" data-reveal data-delay="200">
+        <img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=700&q=80" alt="Modern Kitchen" loading="lazy" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Modular Kitchen</span></div>
+      </div>
+      <div class="gallery-item" data-reveal data-delay="300">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80" alt="Sky Pool" loading="lazy" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Infinity Sky Pool</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section">
+  <div class="container">
+    <div class="location-grid">
+      <div>
+        <span class="section-tag" data-reveal>LOCATION</span>
+        <h2 class="section-title" data-reveal data-delay="150">Sector 94 — Noida's Prime Address</h2>
+        <p class="section-desc" data-reveal data-delay="250">Strategically positioned on the Noida-Greater Noida Expressway with unparalleled connectivity to Delhi, Gurgaon, and the NCR region.</p>
+        <div class="location-perks" data-reveal data-delay="300">
+          <div class="location-perk">
+            <div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+            <div><div class="location-perk-title">DND Flyway — 5 min</div><div class="location-perk-desc">Direct access to South Delhi via DND</div></div>
+          </div>
+          <div class="location-perk">
+            <div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div><div class="location-perk-title">Sector 18 Metro — 8 min</div><div class="location-perk-desc">Blue Line metro connectivity</div></div>
+          </div>
+          <div class="location-perk">
+            <div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg></div>
+            <div><div class="location-perk-title">IGI Airport — 35 min</div><div class="location-perk-desc">Via Yamuna Expressway &amp; NH-48</div></div>
+          </div>
+          <div class="location-perk">
+            <div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div><div class="location-perk-title">Schools & Hospitals Nearby</div><div class="location-perk-desc">GD Goenka, Fortis, DPS within 5 km</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="location-map" data-reveal="right" data-delay="200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5!2d77.39!3d28.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSector%2094%2C%20Noida!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Trump Tower Noida Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div data-reveal>
+      <h2>Ready to Own a Piece of<br><span style="color:var(--orange)">Global Prestige?</span></h2>
+      <p>Book a private site tour today. Our luxury property consultants will walk you through each residence, floor plan, and exclusive offer available at Trump Tower Noida.</p>
+    </div>
+    <div class="cta-banner-buttons" data-reveal="right" data-delay="200">
+      <a href="index.html#contact" class="btn-primary ripple-btn">Book Private Tour →</a>
+      <a href="tel:+919876543210" class="btn-outline-white">Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED PROJECTS -->
+<section class="related-section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-tag" data-reveal>EXPLORE MORE</span>
+      <h2 class="section-title" data-reveal data-delay="150">Similar Luxury Properties</h2>
+    </div>
+    <div class="related-grid">
+      <a href="elie-saab-residences.html" class="related-card" data-reveal data-delay="100">
+        <div class="related-card-img">
+          <img src="assets/elie-saab.jpg" alt="Elie Saab Residences" loading="lazy" />
+          <div class="related-card-img-badge"><span class="related-badge">Ultra Luxury</span></div>
+        </div>
+        <div class="related-card-body">
+          <div class="related-card-title">Elie Saab Residences</div>
+          <div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 98, Noida</div>
+          <span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="ace-starlit.html" class="related-card" data-reveal data-delay="200">
+        <div class="related-card-img">
+          <img src="assets/ace-starlit.jpg" alt="ACE Starlit" loading="lazy" />
+          <div class="related-card-img-badge"><span class="related-badge">Luxury</span></div>
+        </div>
+        <div class="related-card-body">
+          <div class="related-card-title">ACE Starlit</div>
+          <div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 152, Noida</div>
+          <span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="nimbus-golden-palms.html" class="related-card" data-reveal data-delay="300">
+        <div class="related-card-img">
+          <img src="assets/nimbus-golden-palms.jpg" alt="Nimbus The Golden Palms" loading="lazy" />
+          <div class="related-card-img-badge"><span class="related-badge">Luxury</span></div>
+        </div>
+        <div class="related-card-body">
+          <div class="related-card-title">Nimbus The Golden Palms</div>
+          <div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 168, Noida</div>
+          <span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">⌂ Property <span class="logo-accent">Panchang</span></div>
+        <p class="footer-tagline">Bridging premium real estate expertise with traditional wisdom. Your trusted guide to auspicious property discoveries in Noida &amp; Greater Noida.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42A2.78 2.78 0 0020.77 4.65C19.13 4.2 12 4.2 12 4.2s-7.13 0-8.77.45A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.23 19.35C4.87 19.8 12 19.8 12 19.8s7.13 0 8.77-.45a2.78 2.78 0 001.77-1.77A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#residential">Residential</a></li>
+          <li><a href="index.html#commercial">Commercial</a></li>
+          <li><a href="index.html#prelaunch">Pre-Launch</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Properties</h4>
+        <ul>
+          <li><a href="trump-tower.html">Trump Tower</a></li>
+          <li><a href="elie-saab-residences.html">Elie Saab Residences</a></li>
+          <li><a href="ace-starlit.html">ACE Starlit</a></li>
+          <li><a href="nimbus-golden-palms.html">Nimbus Golden Palms</a></li>
+          <li><a href="gulshan-one29.html">Gulshan One29</a></li>
+          <li><a href="bhutani-cyberthum.html">Bhutani Cyberthum</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012.12 3.18 2 2 0 014.11 1H7a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> +91 98765 43210</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@propertypanchang.com</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 18, Noida — 201301</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Property Panchang. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="project-shared.js"></script>
+</body>
+</html>

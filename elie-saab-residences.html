@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elie Saab Residences Noida — Signature Villas | Property Panchang</title>
+  <meta name="description" content="Elie Saab Residences Noida — a collaboration of French couture fashion and luxury real estate. Signature villas in Sector 98, Noida." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project-shared.css" />
+  <style>
+    /* Elie Saab — rose gold / couture animation */
+    :root { --proj-accent: #D4A5A5; }
+    .hero-fashion-line {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 0%, #D4A5A5 40%, #e8c5c5 60%, transparent 100%);
+      animation: fashionLine 4s ease infinite;
+      z-index: 3;
+    }
+    @keyframes fashionLine {
+      0%,100% { opacity: 0.4; transform: scaleX(0.8); }
+      50% { opacity: 1; transform: scaleX(1); }
+    }
+    .proj-badge-cat { background: linear-gradient(135deg, #D4A5A5, #e8c5c5); color: #3d0000; }
+    /* Floating couture tag */
+    .couture-tag {
+      position: absolute; top: 40px; right: 40px; z-index: 4;
+      border: 1px solid rgba(212,165,165,0.5); padding: 14px 18px;
+      border-radius: 12px; backdrop-filter: blur(12px);
+      background: rgba(212,165,165,0.08); text-align: center;
+      animation: fadeUpIn 1s 1s var(--ease) both; min-width: 120px;
+    }
+    .couture-tag-icon { font-size: 1.8rem; display: block; margin-bottom: 6px; }
+    .couture-tag-text { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; color: rgba(255,255,255,0.7); display: block; }
+    @media (max-width: 640px) { .couture-tag { display: none; } }
+    .highlight-card:hover::before { background: var(--proj-accent); }
+    .amenity-card:hover { border-color: var(--proj-accent); box-shadow: 0 16px 40px rgba(212,165,165,0.15); }
+    .amenity-icon svg { color: #c47777 !important; }
+    .amenity-card:hover .amenity-icon { background: #c47777; }
+    .amenity-card:hover .amenity-icon svg { color: white !important; }
+    /* Staggered entrance for hero */
+    .project-hero-title span { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav class="navbar at-top" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⌂</span><span>Property <span class="logo-accent">Panchang</span></span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#home" class="nav-link">Home</a></li>
+      <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+      <li><a href="index.html#residential" class="nav-link">Residential</a></li>
+      <li><a href="index.html#commercial" class="nav-link">Commercial</a></li>
+      <li><a href="index.html#prelaunch" class="nav-link">Pre-Launch</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#contact" class="btn-nav-cta ripple-btn">Book Your Visit</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <a href="index.html#home" class="mobile-link">Home</a>
+    <a href="index.html#projects" class="mobile-link">Projects</a>
+    <a href="index.html#residential" class="mobile-link">Residential</a>
+    <a href="index.html#commercial" class="mobile-link">Commercial</a>
+    <a href="index.html#prelaunch" class="mobile-link">Pre-Launch</a>
+    <a href="index.html#contact" class="mobile-link">Contact</a>
+    <a href="index.html#contact" class="btn-mobile-cta">Book Muhurat Visit</a>
+  </div>
+</div>
+
+<section class="project-hero">
+  <div class="project-hero-bg">
+    <img src="assets/elie-saab.jpg" alt="Elie Saab Residences Noida" loading="eager" />
+  </div>
+  <div class="project-hero-overlay" style="background:linear-gradient(to top, rgba(30,10,20,0.9) 0%, rgba(30,10,20,0.45) 50%, rgba(30,10,20,0.15) 100%)"></div>
+  <div class="hero-fashion-line"></div>
+  <div class="couture-tag">
+    <span class="couture-tag-icon">👗</span>
+    <span class="couture-tag-text">Couture<br>Living</span>
+  </div>
+  <div class="project-hero-content">
+    <a href="index.html#projects" class="project-back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to Projects
+    </a>
+    <div class="project-badges">
+      <span class="proj-badge proj-badge-type">Residential</span>
+      <span class="proj-badge proj-badge-cat">Ultra Luxury</span>
+      <span class="proj-badge proj-badge-status">● Exclusive Villas</span>
+    </div>
+    <h1 class="project-hero-title">Elie Saab<br><span style="color:#D4A5A5">Residences</span></h1>
+    <p class="project-hero-subtitle">Where French haute couture meets Indian luxury living. Elie Saab Residences is a once-in-a-generation collaboration that brings the world's most celebrated fashion house into your home.</p>
+    <div class="project-hero-meta">
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 98, Noida</div>
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Possession: 2027</div>
+      <div class="project-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg> Signature Villas</div>
+    </div>
+    <div class="project-hero-cta-row">
+      <a href="index.html#contact" class="btn-primary ripple-btn">Enquire Now →</a>
+      <a href="#overview" class="btn-outline-white">Explore Details</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-bar-item" data-reveal data-delay="100"><div class="stat-bar-value"><span data-count="4">0</span><span>+</span></div><div class="stat-bar-label">Villa Configurations</div></div>
+    <div class="stat-bar-item" data-reveal data-delay="200"><div class="stat-bar-value"><span data-count="80">0</span></div><div class="stat-bar-label">Exclusive Units</div></div>
+    <div class="stat-bar-item" data-reveal data-delay="300"><div class="stat-bar-value"><span data-count="8">0</span><span>K+</span></div><div class="stat-bar-label">Sq.Ft Carpet Area</div></div>
+    <div class="stat-bar-item" data-reveal data-delay="400"><div class="stat-bar-value"><span data-count="100">0</span><span>%</span></div><div class="stat-bar-label">Couture Designed</div></div>
+  </div>
+</div>
+
+<section class="overview-section" id="overview">
+  <div class="container">
+    <div class="overview-grid">
+      <div class="overview-text">
+        <span class="section-tag" data-reveal>PROJECT OVERVIEW</span>
+        <h2 class="section-title" data-reveal data-delay="150">Fashion Meets Architecture</h2>
+        <p data-reveal data-delay="200">Elie Saab Residences is one of India's most audacious luxury real estate collaborations — a project where the vision of world-renowned fashion designer Elie Saab informs every aspect of residential design. Located in Sector 98, Noida, these signature villas are among the rarest addresses in the NCR.</p>
+        <p data-reveal data-delay="250">Every villa in this exclusive enclave has been conceptualized with the same attention to detail that defines Elie Saab's haute couture gowns. The result is a home that is both a work of art and a sanctuary of comfort — from custom handcrafted finishes to sculptural staircases and breathtaking landscape gardens.</p>
+        <div class="feature-tags" data-reveal data-delay="300">
+          <span class="feature-tag">Couture-Designed Interiors</span>
+          <span class="feature-tag">Private Pool</span>
+          <span class="feature-tag">Landscape Garden</span>
+          <span class="feature-tag">4-Car Garage</span>
+          <span class="feature-tag">Staff Quarters</span>
+        </div>
+        <div class="overview-cta" data-reveal data-delay="350">
+          <a href="index.html#contact" class="btn-outline-dark">Request Brochure</a>
+        </div>
+      </div>
+      <div data-reveal="right" data-delay="200">
+        <div class="info-card">
+          <div class="info-card-header"><h3>🏡 Project Specifications</h3></div>
+          <div class="info-card-body">
+            <div class="info-row"><span class="info-label">Fashion Designer</span><span class="info-value">Elie Saab (Paris)</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-value">Sector 98, Noida</span></div>
+            <div class="info-row"><span class="info-label">Property Type</span><span class="info-value">Signature Villas</span></div>
+            <div class="info-row"><span class="info-label">Configuration</span><span class="info-value">4, 5 &amp; 6 BHK Villas</span></div>
+            <div class="info-row"><span class="info-label">Carpet Area</span><span class="info-value highlight">6,500 – 10,000 sq.ft</span></div>
+            <div class="info-row"><span class="info-label">Plot Size</span><span class="info-value">500 – 900 sq.yards</span></div>
+            <div class="info-row"><span class="info-label">Total Units</span><span class="info-value">80 Villas (Gated)</span></div>
+            <div class="info-row"><span class="info-label">RERA Status</span><span class="info-value highlight">RERA Approved ✓</span></div>
+            <div class="info-row"><span class="info-label">Possession</span><span class="info-value">March 2027</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="highlights-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:16px">
+      <span class="section-tag" data-reveal>WHY ELIE SAAB RESIDENCES</span>
+      <h2 class="section-title" data-reveal data-delay="150">Where Every Detail is Couture</h2>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card" data-reveal data-delay="100">
+        <div class="highlight-number">01</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="highlight-title">Haute Couture Design</div>
+        <div class="highlight-text">Every surface, fixture, and space is a direct translation of Elie Saab's signature aesthetic — intricate detailing, soft luxury textures, and an unmistakable sense of elegance.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="200">
+        <div class="highlight-number">02</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg></div>
+        <div class="highlight-title">Gated Villa Community</div>
+        <div class="highlight-text">A fully secured, 24/7 gated community of only 80 exclusive villas. Shared club house, landscaped promenades, and premium community facilities.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="300">
+        <div class="highlight-number">03</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/></svg></div>
+        <div class="highlight-title">Private Pool & Garden</div>
+        <div class="highlight-text">Each villa features a private temperature-controlled pool, manicured landscape garden, and an al-fresco dining deck overlooking your personal green sanctuary.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="100">
+        <div class="highlight-number">04</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="highlight-title">International Brand</div>
+        <div class="highlight-text">Backed by the global prestige of the Elie Saab brand — ensuring your investment retains unmatched international appeal and extraordinary resale value.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="200">
+        <div class="highlight-number">05</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <div class="highlight-title">Highest Security</div>
+        <div class="highlight-text">Three-tier security system with biometric entry, 24/7 armed surveillance, CCTV across 200+ points, and a dedicated security control room.</div>
+      </div>
+      <div class="highlight-card" data-reveal data-delay="300">
+        <div class="highlight-number">06</div>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <div class="highlight-title">Bespoke Interiors</div>
+        <div class="highlight-text">Handcrafted canopy ceilings, custom chandeliers, hand-painted wall murals and artisanal woodwork — each villa is a truly one-of-a-kind masterpiece.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="amenities-section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-tag" data-reveal>VILLA AMENITIES</span>
+      <h2 class="section-title" data-reveal data-delay="150">The Art of Luxurious Living</h2>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-card" data-reveal data-delay="100"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div><div class="amenity-name">Private Pool</div><div class="amenity-desc">Temperature-controlled infinity pool with automated cleaning system.</div></div>
+      <div class="amenity-card" data-reveal data-delay="150"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="amenity-name">Spa Suite</div><div class="amenity-desc">In-villa spa with steam room, massage area, and jacuzzi.</div></div>
+      <div class="amenity-card" data-reveal data-delay="200"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="amenity-name">Staff Quarters</div><div class="amenity-desc">Separate staff quarters with private entry and amenities.</div></div>
+      <div class="amenity-card" data-reveal data-delay="250"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><div class="amenity-name">4-Car Garage</div><div class="amenity-desc">Air-conditioned, tiled garage with EV charging stations.</div></div>
+      <div class="amenity-card" data-reveal data-delay="300"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div><div class="amenity-name">Landscape Garden</div><div class="amenity-desc">Manicured private garden with al-fresco dining terrace.</div></div>
+      <div class="amenity-card" data-reveal data-delay="350"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="amenity-name">Home Theatre</div><div class="amenity-desc">Dedicated 12-seat Dolby Atmos home cinema per villa.</div></div>
+      <div class="amenity-card" data-reveal data-delay="100"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div><div class="amenity-name">Smart House</div><div class="amenity-desc">Complete home automation — lights, security, climate, entertainment.</div></div>
+      <div class="amenity-card" data-reveal data-delay="150"><div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg></div><div class="amenity-name">Club House</div><div class="amenity-desc">Shared clubhouse with lounge, gym, pool table &amp; banquet hall.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <span class="section-tag" data-reveal>GALLERY</span>
+    <h2 class="section-title" data-reveal data-delay="150">Elie Saab Residences — Signature Views</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-reveal data-delay="100"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80" alt="Villa Exterior" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">Villa Exterior</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="200"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80" alt="Living Room" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">Grand Living Room</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="100"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=80" alt="Master Suite" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">Master Suite</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="200"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=700&q=80" alt="Pool Garden" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">Private Pool Garden</span></div></div>
+      <div class="gallery-item" data-reveal data-delay="300"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80" alt="Spa Suite" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">In-Villa Spa</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="location-section">
+  <div class="container">
+    <div class="location-grid">
+      <div>
+        <span class="section-tag" data-reveal>LOCATION</span>
+        <h2 class="section-title" data-reveal data-delay="150">Sector 98, Noida — Elite Address</h2>
+        <p class="section-desc" data-reveal data-delay="250">A prime location on the Noida–Greater Noida Expressway with seamless access to Delhi, Gurgaon and the entire NCR.</p>
+        <div class="location-perks" data-reveal data-delay="300">
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div><div class="location-perk-title">Noida Expressway — Frontage</div><div class="location-perk-desc">Direct frontage on the expressway for premium visibility</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/></svg></div><div><div class="location-perk-title">DLF Mall of India — 10 min</div><div class="location-perk-desc">Prime shopping and dining within minutes</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/></svg></div><div><div class="location-perk-title">Fortis Hospital — 8 min</div><div class="location-perk-desc">World-class medical facilities in proximity</div></div></div>
+          <div class="location-perk"><div class="location-perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/></svg></div><div><div class="location-perk-title">Proposed Metro — 5 min</div><div class="location-perk-desc">Upcoming metro connectivity to enhance access</div></div></div>
+        </div>
+      </div>
+      <div class="location-map" data-reveal="right" data-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504!2d77.38!3d28.54!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSector%2098%2C%20Noida!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy" title="Elie Saab Residences Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div data-reveal>
+      <h2>Experience Couture Living<br><span style="color:var(--orange)">In Noida's Finest Address</span></h2>
+      <p>Request an exclusive private villa tour. Our luxury specialists will walk you through every detail of your potential new home at Elie Saab Residences.</p>
+    </div>
+    <div class="cta-banner-buttons" data-reveal="right" data-delay="200">
+      <a href="index.html#contact" class="btn-primary ripple-btn">Request Private Tour →</a>
+      <a href="tel:+919876543210" class="btn-outline-white">Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-tag" data-reveal>EXPLORE MORE</span>
+      <h2 class="section-title" data-reveal data-delay="150">Similar Premium Properties</h2>
+    </div>
+    <div class="related-grid">
+      <a href="trump-tower.html" class="related-card" data-reveal data-delay="100"><div class="related-card-img"><img src="assets/trump-tower.jpg" alt="Trump Tower" loading="lazy" /><div class="related-card-img-badge"><span class="related-badge">Ultra Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">Trump Tower</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 94, Noida</div><span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+      <a href="lt-green-reserve.html" class="related-card" data-reveal data-delay="200"><div class="related-card-img"><img src="assets/lt-green-reserve.jpg" alt="L&T Green Reserve" loading="lazy" /><div class="related-card-img-badge"><span class="related-badge">Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">L&amp;T Green Reserve</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 128, Noida</div><span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+      <a href="experion-saatori.html" class="related-card" data-reveal data-delay="300"><div class="related-card-img"><img src="assets/experion-saatori.jpg" alt="Experion SAATORI" loading="lazy" /><div class="related-card-img-badge"><span class="related-badge">Luxury</span></div></div><div class="related-card-body"><div class="related-card-title">Experion SAATORI</div><div class="related-card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Sector 151, Noida</div><span class="related-card-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-logo">⌂ Property <span class="logo-accent">Panchang</span></div><p class="footer-tagline">Bridging premium real estate expertise with traditional wisdom. Your trusted guide to auspicious property discoveries.</p><div class="footer-social"><a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></a><a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div><div class="footer-links-col"><h4>Quick Links</h4><ul><li><a href="index.html#home">Home</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#residential">Residential</a></li><li><a href="index.html#commercial">Commercial</a></li><li><a href="index.html#contact">Contact</a></li></ul></div><div class="footer-links-col"><h4>Properties</h4><ul><li><a href="trump-tower.html">Trump Tower</a></li><li><a href="elie-saab-residences.html">Elie Saab Residences</a></li><li><a href="ace-starlit.html">ACE Starlit</a></li><li><a href="gulshan-one29.html">Gulshan One29</a></li><li><a href="bhutani-cyberthum.html">Bhutani Cyberthum</a></li></ul></div><div class="footer-links-col"><h4>Contact Us</h4><ul class="footer-contact-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012.12 3.18 2 2 0 014.11 1H7a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+91 98765 43210</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@propertypanchang.com</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Sector 18, Noida — 201301</li></ul></div></div><div class="footer-bottom"><p>© 2024 Property Panchang. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+<script src="project-shared.js"></script>
+</body>
+</html>

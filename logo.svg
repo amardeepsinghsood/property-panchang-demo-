@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+  <!-- House Roof -->
+  <path d="M100 10 L170 55 L160 55 L160 60 L40 60 L40 55 L30 55 Z" fill="#c45c3a" stroke="none"/>
+  
+  <!-- P and प letters inside house -->
+  <g transform="translate(50, 65)">
+    <!-- English P -->
+    <text x="0" y="40" font-family="Georgia, serif" font-size="52" font-weight="600" fill="#c45c3a">P</text>
+    <!-- Hindi प -->
+    <text x="40" y="42" font-family="Noto Sans Devanagari, Arial, sans-serif" font-size="52" font-weight="600" fill="#c45c3a">प</text>
+  </g>
+  
+  <!-- PROPERTY text -->
+  <text x="100" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="400" letter-spacing="3" fill="#d4a574">PROPERTY</text>
+  
+  <!-- पंचांग text -->
+  <text x="100" y="150" text-anchor="middle" font-family="Noto Sans Devanagari, Arial, sans-serif" font-size="20" fill="#d4a574">पंचांग</text>
+</svg>
